@@ -2,11 +2,11 @@
 
 html {
     font-size: 18px;
-    line-height: 1.4;
 }
 
 body {
     font-family: Helvetica;
+    line-height: 1.4;
 }
 
 /*--- CONTAINERS AND FLEX ---*/
@@ -77,71 +77,84 @@ header {
     /*--- SERVICES ---*/
 
 #services {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    height: 8rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
-.products {
-    justify-content: space-around;
+.product-container {
+    width: 5rem;
+    height: 8rem;
+    justify-content: center;
+    text-align: center;
     flex-wrap: wrap;
-    padding: 0 6rem;
+    margin: 0 3rem;
+}
+
+
+.products {
+    justify-content: center;
+}
+
+.product-img {
+    width: 3.5rem;
+    height: auto;
 }
 
 .exams,
 .fittings,
-delivery {
-    text-align: center;
-    line-height: 1.4;
-    padding: 0;
+.delivery {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.exams img {
-    width: 3.5rem;
-    padding-bottom: 0.75rem;
-}
-
-.fittings img,
-.delivery img {
-    width: 5rem;
-    padding-bottom: 2.2rem;
-}
 
 
 /*--- CONTACTS ---*/
 
 
-.philosophy,
-.contact {
-    width: 
-    padding: 0 5%;
+#contact {
+    justify-content: space-around;
 }
 
-.philosophy h3,
-.contact h3 {
-    width: 30%;
-    font-weight: bold;
+.subtitle {
     font-size: 1rem;
-    text-transform: uppercase;
+    font-weight: bold;
     color: white;
     background-color: cadetblue;
-    padding: 1.25rem 0.5rem; 
+    padding: 0.5rem 0 0.5rem 1.25rem;
+    width: 10rem;
+    margin-bottom: 1rem;
 }
 
-.philosophy p {
+.contact-container {
     width: 35%;
-    padding-top: 1rem;
+}
+
+.philosophy {
+    margin-right: 5%;
+}
+
+.philosophy,
+.appointments {
+    margin-bottom: 5rem;
 }
 
 
 /*--- FOOTER ---*/
 
+footer {
+    background-color: azure;
+}
 
+.logo-img-footer {
+    height: 1.5rem;
+    margin: 4rem 1rem 4rem 4rem;
+}
 
-
-
-
-
+.test {
+    align-content: center;
+}
 
 
 

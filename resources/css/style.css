@@ -53,6 +53,11 @@ header {
     font-size: 1rem;
 }
 
+.cell {
+    visibility: hidden;
+    display: none;
+}
+
     /*--- BANNER ---*/
 
 .banner {
@@ -157,6 +162,176 @@ footer {
 }
 
 
+/*------- MEDIA QUERIES ------*/
+
+
+/*--- TABLET ---*/
+
+@media only screen and (max-width: 768px) {
+  
+     /*--- CONTAINER ---*/
+    
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+    
+    /*--- HEADER ---*/
+    
+    
+    header {
+        padding-top: 0;
+        height: 22rem;
+    }
+    
+        /*--- BANNER ---*/
+
+        .banner {
+            margin-top: 5rem;
+            width: 57%;
+            position: relative;
+            left: 42%;
+            top: 15%;
+            margin-right: 2rem;
+        }
+
+        .banner h1 {
+            background-color: white;
+            color: black;
+            padding: 0.75rem 4rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1.33rem;
+            line-height: 1.2;
+        }
+}
+    
+
+/*--- Cellphone ---*/
+
+@media only screen and (max-width: 480px) {
+  
+     /*--- CONTAINER ---*/
+    
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+    
+    /*--- HEADER ---*/
+    
+    
+        header {
+            padding-top: 0;
+            height: 22rem;
+            background-position: 20%;
+        }
+    
+        .logo {
+            padding: 0.5rem;
+        }
+    
+        .cell {
+            visibility: visible;
+            display: flex;
+            align-items: center;
+        }
+    
+        .navigation span {
+            visibility: hidden;
+            display: none;
+        }
+    
+        .logo p {
+            visibility: hidden;
+            display: none;
+        }
+    
+        .nav-bar {
+            justify-content: space-around;
+        }
+    
+        /*--- BANNER ---*/
+
+        .banner {
+            margin-top: 9rem;
+            width: 100%
+            margin: auto;
+            text-align: center;
+        }
+
+        .banner h1 {
+            background-color: white;
+            color: black;
+            padding: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1rem;
+            line-height: 1.2;
+        }
+    
+
+    
+        /*--- SERVICES ---*/
+
+        #services {
+            margin: 3.77rem 0;
+        }
+
+        .products {
+            flex-direction: column;
+            align-items: center;
+            font-size: 0.77rem;
+        }
+
+        .product-container {
+            margin-top: 1.54;
+        }
+    
+        /*--- CONTACT ---*/
+
+        #contact {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            font-weight: bold;
+            color: white;
+            background-color: cadetblue;
+            padding: 0.5rem 0 0.5rem;
+            margin-bottom: 1rem;
+            width: 100%;
+            text-align: center;
+        }
+    
+        #contact p {
+            font-size: 0.77rem;
+        }
+
+        .contact-container {
+            width: 100%;
+        }
+
+        .philosophy,
+        .appointments {
+            margin-bottom: 4rem;
+        }
+    
+        /*--- FOOTER ---*/
+    
+        .logo {
+            justify-content: center;
+        }
+    
+        .copy {
+            visibility: hidden;
+            display: none;
+        }
+}
+    
+    
 
 
 

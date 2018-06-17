@@ -231,6 +231,11 @@ footer {
             padding: 0.5rem;
         }
     
+        .logo img {
+        height: 1.5rem;
+        margin: auto;
+        }
+    
         .cell {
             visibility: visible;
             display: flex;
@@ -270,7 +275,6 @@ footer {
             line-height: 1.2;
         }
     
-
     
         /*--- SERVICES ---*/
 
@@ -321,8 +325,16 @@ footer {
     
         /*--- FOOTER ---*/
     
-        .logo {
+        footer {
+            display: flex;
+            align-content: center;
+            height: 9rem;
+        }
+
+        footer .logo {
             justify-content: center;
+            align-items: center;
+            margin: auto;
         }
     
         .copy {
